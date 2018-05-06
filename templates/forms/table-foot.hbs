@@ -1,0 +1,16 @@
+<div class="table-foot">
+    <form id="create-receipt-form" method="post" action="#/submitReceipt">
+        <div class="col wide">
+        </div>
+        <div class="col wide">
+        </div>
+        <div class="col wide right">Total:</div>
+        <div class="col total receipt-total">{{receiptTotal}}</div>
+        <div class="col">
+            <input id="checkoutBtn" type="submit" value="Checkout"/>
+        </div>
+        <input type="hidden" name="receiptId" value="{{receiptId}}"/>
+        <input type="hidden" name="productCount" value="{{productCount}}"/>
+        <input type="hidden" name="total" value="{{receiptTotal}}"/>
+    </form>
+</div>
